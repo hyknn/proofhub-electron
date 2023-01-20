@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-const { app, globalShortcut, BrowserWindow } = require('electron');
+const { app, globalShortcut, BrowserWindow, screen } = require('electron');
 const path = require('path');
 
 var homePage = 'https://andaf.proofhub.com/';
@@ -39,9 +39,13 @@ app.commandLine.appendSwitch('enable-gpu-rasterization');
 
 function createWindow() {
   // Create the browser window.
+  const display = screen.getPrimaryDisplay();
+  const maxiSize = display.workAreaSize;
+
   const mainWindow = new BrowserWindow({
-    width: 1280,
-    height: 720,
+    resizable: false,
+    height: maxiSize.height,
+    width: maxiSize.width,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: false,
