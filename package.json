@@ -17,7 +17,7 @@
         "deb"
       ],
       "category": "Offices",
-      "artifactName": "${name}_${version}_linux.${ext}"
+      "artifactName": "${name}_${version}.${ext}"
     },
     "extraFiles": [
       "com.github.hyknn.${name}.desktop"
@@ -27,7 +27,7 @@
   "keywords": [
     "Electron"
   ],
-  "author": "Hyknn",
+  "author": "Hyknn <hykncode@gmail.com>",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^22.0.2",
