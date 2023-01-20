@@ -39,13 +39,9 @@ app.commandLine.appendSwitch('enable-gpu-rasterization');
 
 function createWindow() {
   // Create the browser window.
-  const display = screen.getPrimaryDisplay();
-  const maxiSize = display.workAreaSize;
-
   const mainWindow = new BrowserWindow({
-    resizable: false,
-    height: maxiSize.height,
-    width: maxiSize.width,
+    width: 1280,
+    height: 720,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: false,
@@ -54,6 +50,7 @@ function createWindow() {
   });
 
   mainWindow.loadURL(homePage);
+  mainWindow.maximize();
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
