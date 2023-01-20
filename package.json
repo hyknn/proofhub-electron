@@ -1,10 +1,27 @@
 {
   "name": "proofhub-electron",
+  "appId": "com.github.hyknn.${name}",
   "version": "1.0.0",
   "description": "Linux Desktop client for Proofhub",
   "main": "scripts/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder --publish never"
+  },
+  "build": {
+    "asar": false,
+    "linux": {
+      "target": [
+        "zip",
+        "AppImage",
+        "deb"
+      ],
+      "category": "Offices",
+      "artifactName": "${name}_${version}_linux.${ext}"
+    },
+    "extraFiles": [
+      "com.github.hyknn.${name}.desktop"
+    ]
   },
   "repository": "https://github.com/hyknn/proofhub-electron",
   "keywords": [
@@ -13,6 +30,7 @@
   "author": "Hyknn",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^22.0.2"
+    "electron": "^22.0.2",
+    "electron-builder": "^23.6.0"
   }
 }
