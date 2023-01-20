@@ -1,9 +1,9 @@
 {
   "name": "proofhub-electron",
   "appId": "com.github.hyknn.${name}",
-  "productName": "Proofhub",
+  "productName": "ProofHub",
   "version": "1.0.0",
-  "description": "Linux Desktop client for Proofhub",
+  "description": "Linux Desktop client for ProofHub",
   "main": "scripts/main.js",
   "scripts": {
     "start": "electron .",
