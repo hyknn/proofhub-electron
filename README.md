@@ -19,4 +19,4 @@ This project and its contributors are not affiliated with Proofhub, nor it's pro
     ```sh
     npm run build
     ```
-4. Run the AppImage or install it via deb package
+4. Run the output AppImage or install it via deb package
