@@ -1,6 +1,6 @@
 # About
 
-Unofficial client for Proofhub Project Planning Software providing a native Linux desktop experince and some additional features.
+Unofficial client for Proofhub providing a native Linux desktop experince and some additional features.
 
 ## Disclaimer
 
