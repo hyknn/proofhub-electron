@@ -16,7 +16,7 @@
         "AppImage",
         "deb"
       ],
-      "icon": "icon.png",
+      "icon": "./build/icons",
       "category": "Offices",
       "desktop": "com.github.hyknn.${name}.desktop",
       "artifactName": "${name}_${version}.${ext}"
