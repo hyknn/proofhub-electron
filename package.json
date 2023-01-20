@@ -1,20 +1,16 @@
 {
-  "name": "electron-quick-start",
+  "name": "proofhub-electron",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
+  "description": "Linux Desktop client for Proofhub",
+  "main": "scripts/main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/hyknn/proofhub-electron",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Electron"
   ],
-  "author": "GitHub",
+  "author": "Hyknn",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^22.0.2"

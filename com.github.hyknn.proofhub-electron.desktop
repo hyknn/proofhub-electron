@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Proofhub
+Comment=All-in-One Project Planning Software
+Type=Application
+Exec=/opt/proofhub-electron/proofhub-electron
+Icon=proofhub
+StartupWMClass=geforce now
+Categories=Office;
+Keywords=Office;Proofhub
